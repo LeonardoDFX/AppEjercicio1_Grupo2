@@ -28,7 +28,6 @@ public class Usuario implements Serializable{
 		
 	}
 
-
 	public String getContrasenia() {
 		return contrasenia;
 	}
@@ -49,5 +48,12 @@ public class Usuario implements Serializable{
 	public String toString() {
 		return "usuario=" + usuario + ", contrasenia=" + contrasenia + "]";
 	}
-
+	
+	public void initUsuarioBean() {
+		System.out.println("Se inicia el Bean.");
+	}
+	
+	public void destroyUsuarioBean() {
+		System.out.println("Se destruye el Bean.");
+	}
 }
