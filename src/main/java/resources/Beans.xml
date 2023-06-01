@@ -4,9 +4,15 @@
 		xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 		
-		<bean id="usuarioPepe" class="entidad.Usuario" scope="prototype" init-method="initUsuarioBean" destroy-method="destroyUsuarioBean">
+		<bean id="usuarioPepe" class="entidad.Usuario"  init-method="initUsuarioBean" destroy-method="destroyUsuarioBean">
 		 	<property name="usuario" value="Pepe"></property>
 		 	<property name="contrasenia" value="123"></property>
 		</bean>
+		
+		<bean id="usuarioPepeNegocio" class="negocio.UsuarioNegocio"  init-method="initUsuarioBean" destroy-method="destroyUsuarioBean">
+		 	
+		</bean>
+		
+		
 
 </beans>

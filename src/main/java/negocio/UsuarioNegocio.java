@@ -18,4 +18,11 @@ public class UsuarioNegocio {
 		}
 		return false;
 	}
+	public void initUsuarioBean() {
+		System.out.println("Se inicia el Bean.");
+	}
+	
+	public void destroyUsuarioBean() {
+		System.out.println("Se destruye el Bean.");
+	}
 }
