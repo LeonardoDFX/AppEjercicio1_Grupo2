@@ -6,8 +6,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
-import entidad.Usuario;
-
 public class ConfigHibernate {
 
 	private SessionFactory sessionFactory;

@@ -72,6 +72,13 @@ public class UsuarioDao {
         session.getTransaction().commit();        
         
         config.cerrarSession();
-
+	}
+	
+	public void initUsuarioDaoBean() {
+		System.out.println("Se inicia el Bean UsuarioDao.");
+	}
+	
+	public void destroyUsuarioDaoBean() {
+		System.out.println("Se destruye el Bean UsuarioDao.");
 	}
 }

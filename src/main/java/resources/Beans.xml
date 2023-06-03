@@ -10,10 +10,9 @@
 		 	<property name="contrasenia" value="123"></property>
 		</bean>
 		
-        <bean id="usuarioDaoPepe" class="dao.UsuarioDao"></bean>
+        <bean id="usuarioDaoPepe" class="dao.UsuarioDao" init-method="initUsuarioDaoBean" destroy-method="destroyUsuarioDaoBean"></bean>
 		
-		<bean id="usuarioPepeNegocio" class="negocio.UsuarioNegocio"  
-		 init-method="initUsuarioBean" destroy-method="destroyUsuarioBean">
+		<bean id="usuarioPepeNegocio" class="negocio.UsuarioNegocio" init-method="initUsuarioNegBean" destroy-method="destroyUsuarioNegBean">
 		 	
 
 		</bean>

@@ -50,10 +50,10 @@ public class Usuario implements Serializable{
 	}
 	
 	public void initUsuarioBean() {
-		System.out.println("Se inicia el Bean.");
+		System.out.println("Se inicia el Bean Usuario.");
 	}
 	
 	public void destroyUsuarioBean() {
-		System.out.println("Se destruye el Bean.");
+		System.out.println("Se destruye el Bean Usuario.");
 	}
 }
