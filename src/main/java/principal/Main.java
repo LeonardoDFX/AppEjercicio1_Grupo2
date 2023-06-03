@@ -27,8 +27,10 @@ public class Main {
 		
 		
 		UsuarioNegocio usuarioNegocio = (UsuarioNegocio)appContext.getBean("usuarioPepeNegocio");
+		
+		
 
-	    boolean estado= usuarioNegocio.agregarUsuario(usuario);
+	    boolean estado= usuarioNegocio.agregarUsuario(usuario,appContext);
 	    if(estado)
 	    	{System.out.println("Se agrego correctamente");}
 	    else
